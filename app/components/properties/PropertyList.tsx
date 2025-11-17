@@ -7,7 +7,7 @@ const PropertyList = () => {
             <PropertyListItem />
             <PropertyListItem />
         </>
-    );
+    )
 }
 
 export default PropertyList;
