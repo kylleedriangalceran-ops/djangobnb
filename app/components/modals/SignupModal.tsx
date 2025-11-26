@@ -35,7 +35,7 @@ const SignupModal = () =>{
         const response = await apiService.post('/api/auth/register/',  JSON.stringify(formData));
         
         if (response.access) {
-            await handleLogin(response.user.pk, response.access, response.refresh);
+            handleLogin(response.user.pk, response.access, response.refresh);
 
             signupModal.close();
 
