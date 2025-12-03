@@ -6,7 +6,7 @@ import apiService from "@/app/services/apiService";
 const PropertyDetailPage = async (props: { params: Promise<{ id: string }> }) => {
     const { id } = await props.params;
     const response = await apiService.get(`/api/properties/${id}`);
-    const property = response.data;
+    const property = response?.data || response;
 
     return (
         <main className="max-w-[1500px] max-auto px-6 pb-6">
