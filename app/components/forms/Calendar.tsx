@@ -25,7 +25,7 @@ const DatePicker: React.FC<DatePickerProps> = ({
             onChange={onChange}
             direction='vertical'
             showDateDisplay={false}
-            minDate={new Date}
+            minDate={new Date()}
             disabledDates={bookedDates}
         />
     )
